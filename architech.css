@@ -9,6 +9,12 @@
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: 0;
+    cursor: pointer;
 }
 /* header styles */
 header{
@@ -52,4 +58,29 @@ nav li a{
 }
 .banner_description{
     color: #727272;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* responsive media queries */
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* for tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
